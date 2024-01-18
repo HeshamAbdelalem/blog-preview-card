@@ -1,0 +1,117 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: 'Fig-400';
+  src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('opentype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Fig-Italic';
+  src: url('/assets/fonts/Figtree-Italic-VariableFont_wght.ttf')
+    format('opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'fig-900';
+  src: url('/assets/fonts/static/Figtree-ExtraBold.ttf') format('opentype');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: 'fig-700';
+  src: url('/assets/fonts/static/Figtree-SemiBold.ttf') format('opentype');
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'fig-700';
+  color: var(--black);
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  width: 410px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  background-color: var(--white);
+  padding: 1.8rem;
+  border-radius: 1rem;
+  border: 1px solid var(--black);
+  box-shadow: 15px 15px 0px var(--black);
+  transition: all 0.25s ease-in;
+}
+
+.card-container:hover {
+  box-shadow: 20px 20px 0px var(--black);
+}
+
+.svg-container {
+  text-align: center;
+}
+.svg-container img {
+  border-radius: 0.5rem;
+}
+
+.text-container {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.label {
+  background-color: var(--yellow);
+  display: inline-block;
+  font-family: 'fig-900';
+  font-size: 0.85rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.text-container .published {
+  font-size: 0.85rem;
+  font-family: 'fig-700';
+}
+
+.text-container h1 {
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+  color: var(--yellow);
+  font-family: 'fig-900';
+}
+
+.text-container .detailes {
+  color: var(--grey);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.author img {
+  width: 2.25rem;
+}
+
+.author p {
+  font-family: 'fig-900';
+  color: var(--black);
+  margin-left: 0.75rem;
+}
